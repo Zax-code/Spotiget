@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpotiGet</title>
+    <meta charset="UTF-8" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <script src="js/spot.js"></script>
+</head>
+
+<body>
+    <img src="images/logo_zak_officiel.png" id="logo"></img>
+    <img src="images/logo_spotify.png" id="spot"></img>
+    <h1 id="Title">SpotiGet</h1>
+    <div class="popup">
+        <h1 id="popup_t">Chargé !</h1>
+        <span id="popup_m">Le fichier est prêt à être téléchargé !</span>
+    </div>
+    <div id="Token" class="inter_div">
+        <input type="text" id="TokenIn" class="inter_inputs">
+        <label class="inter_labels">Entrez votre Token</label>
+    </div>
+
+    <div id="Id" class="inter_div">
+        <label class="inter_labels">Entrez le lien ou l'Id de la playlist</label>
+        <input type="text" id="IdIn" class="inter_inputs">
+    </div>
+    <button type="button" id="auto_fill" class="inter_b">auto-fill</button>
+    <button type="button" id="submit" class="inter_b">Submit</button>
+    <div id="draggable">
+    </div>
+    <img id="exit" class="menu_b" src="images/exit.png"></img>
+
+</body>
+
+</html>

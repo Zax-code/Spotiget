@@ -1,0 +1,159 @@
+#exit {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: auto;
+    width: 2%;
+}
+
+#draggable {
+    position: absolute;
+    z-index: -1000;
+    background-color: transparent;
+    width: 95%;
+    top: 0;
+    height: 30px;
+    -webkit-app-region: drag;
+}
+
+#logo {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 10%;
+    height: auto;
+}
+
+.inter_div {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+
+#Token {
+    top: 25%;
+}
+
+#Id {
+    top: 45%;
+}
+
+.popup {
+    position: absolute;
+    color: white;
+    right: 5px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 20%;
+    background-color: green;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.popup.show {
+    visibility: visible;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        right: -20%;
+        opacity: 0;
+    }
+    to {
+        right: 5px;
+        opacity: 1;
+    }
+}
+
+.inter_labels {
+    color: #1DB954;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 27%;
+    left: 26%;
+    background-color: black;
+    z-index: 100;
+}
+
+#Title {
+    position: absolute;
+    margin: 0px;
+    padding: 5px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    width: 75%;
+    text-align: center;
+    color: white;
+    font-size: 8vw;
+    bottom: 90%;
+    letter-spacing: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#spot {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 8%;
+    height: auto;
+}
+
+.inter_inputs {
+    height: 35%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    border: solid white 1px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.inter_b {
+    position: absolute;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 8%;
+    border-radius: 400px;
+    border: transparent;
+    background-color: #1DB954;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.inter_b:hover {
+    background-color: #1a9e48;
+}
+
+button:focus {
+    outline: none;
+}
+
+#submit {
+    left: 50%;
+}
+
+#auto_fill {
+    width: 6rem;
+    height: 1.5rem;
+    transform: translate(10%, 10%);
+    top: 33.5%;
+    left: 75.5%;
+    font-size: 15px;
+}
+
+body {
+    font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin: 0px;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0) 35%, rgb(27, 27, 27) 100%);
+}
