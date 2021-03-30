@@ -3,6 +3,7 @@ let client_Id = '4f6caab820c94eb3942a3d754279c1e9';
 let client_secret = 'ee23439724ce459d9f01d131877a003a';
 google = "https://www.google.com/"
 localHost = "http%3A%2F%2F127.0.0.1%3A8080%2F";
+//in case you don't want to build the electron app and just use the html file, replace google below by localHost and use live-server
 let authURL = `https://accounts.spotify.com/authorize?client_id=${client_Id}&response_type=code&redirect_uri=${google}&scope=playlist-read-private%20playlist-read-collaborative&state=34fFs29kd09`;
 let authCode = null;
 hiddenElement.target = '_blank';
